@@ -1,0 +1,62 @@
+body {
+	background-color: rgb(29, 33, 54);
+	overflow-x: hidden;
+}
+#breed {
+	width: 250px;
+	text-align: center;
+}
+#qty {
+	width: 60px;
+}
+header {
+	position: sticky;
+	top: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background: azure;
+	width: 100%;
+	z-index: 3;
+	color: rgb(20, 0, 94);
+	border-bottom-left-radius: 30px;
+	border-bottom-right-radius: 30px;
+}
+input {
+	padding: 5px;
+}
+#display {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 10px;
+	align-items: center;
+	margin: 20px;
+}
+#display div {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	grid-row: span auto;
+}
+img {
+	width: 100%;
+	border-radius: 10%;
+	border: 2px solid black;
+}
+img:hover {
+	position: absolute;
+	width: 30%;
+	z-index: 2;
+	cursor: cell;
+	animation-name: hover;
+	animation-duration: 500ms;
+}
+@keyframes hover {
+	from {
+		width: 25%;
+	}
+	to {
+		width: 30%;
+	}
+}
